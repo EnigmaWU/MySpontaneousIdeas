@@ -167,3 +167,211 @@ A foundational platform that treats AI reasoning as the fundamental "operating s
 - **Zero Learning Curve**: Interface adapts to your existing mental models
 - **Transparent Operation**: Always understand why the system does what it does
 - **Continuous Improvement**: System gets better at helping you specifically
+
+## Architecture Diagrams
+### Layered View
+
+```mermaid
+graph TB
+    subgraph "🧠 MyNGenThinkOS Architecture"
+        
+        subgraph "Layer 7: Human Interface"
+            UI["`🖥️ **Adaptive User Interface**
+            • Natural Language Shell
+            • Morphing GUI Framework
+            • Context-Aware Help
+            • Intent-Based Controls`"]
+            
+            NLP["`💬 **Natural Language Processor**
+            • Intent Understanding
+            • Context Extraction
+            • Multi-Modal Input
+            • Semantic Parsing`"]
+        end
+        
+        subgraph "Layer 6: Application Ecosystem"
+            Apps["`📱 **Dynamic Applications**
+            • On-Demand App Synthesis
+            • Reasoning-Based Communication
+            • Cross-App Context Sharing
+            • Emergent Capabilities`"]
+            
+            Agents["`🤖 **AI Agent Orchestra**
+            • Specialized Domain Agents
+            • Collaborative Intelligence
+            • Auto Agent Selection
+            • Multi-Agent Workflows`"]
+        end
+        
+        subgraph "Layer 5: Intelligent Services"
+            KnowSys["`🧩 **Knowledge System**
+            • Semantic File Organization
+            • Concept Relationship Mapping
+            • Version Control by Understanding
+            • Intelligent Search & Discovery`"]
+            
+            TaskMgr["`⚙️ **Intent-Based Task Manager**
+            • Goal-Oriented Scheduling
+            • Priority Reasoning
+            • Workflow Optimization
+            • Context-Aware Execution`"]
+            
+            SecMgr["`🛡️ **Intelligent Security**
+            • Reasoning-Based Access Control
+            • Privacy Through Understanding
+            • Anomaly Detection
+            • Contextual Permissions`"]
+        end
+        
+        subgraph "Layer 4: Reasoning Engine"
+            Core["`🎯 **LLM Reasoning Core**
+            • Multi-Step Reasoning Chains
+            • Context-Aware Decision Making
+            • Explainable AI Logic
+            • Cross-Domain Understanding`"]
+            
+            Memory["`🧠 **Semantic Memory Manager**
+            • Knowledge Graph Storage
+            • Context Persistence
+            • Memory Consolidation
+            • Relationship Discovery`"]
+            
+            Learn["`📚 **Continuous Learning**
+            • Pattern Recognition
+            • User Behavior Analysis
+            • System-Wide Improvement
+            • Emergent Intelligence`"]
+        end
+        
+        subgraph "Layer 3: Process Management"
+            Threads["`🔄 **Reasoning Threads**
+            • Thinking Chain Processes
+            • Context Maintenance
+            • Inter-Thread Communication
+            • Goal-Oriented Execution`"]
+            
+            Sched["`⏰ **Intelligent Scheduler**
+            • Priority-Based Allocation
+            • Predictive Execution
+            • Resource Optimization
+            • Context-Aware Interruption`"]
+        end
+        
+        subgraph "Layer 2: System Services"
+            ResAlloc["`⚡ **Smart Resource Allocator**
+            • Importance-Based Distribution
+            • Predictive Management
+            • Efficiency Optimization
+            • Dynamic Scaling`"]
+            
+            CommLayer["`🔗 **Communication Layer**
+            • Natural Language Protocols
+            • Semantic Message Passing
+            • Cross-System Integration
+            • API Translation`"]
+            
+            Storage["`💾 **Semantic Storage**
+            • Meaning-Based Organization
+            • Intelligent Caching
+            • Compression by Relevance
+            • Distributed Knowledge`"]
+        end
+        
+        subgraph "Layer 1: Hardware Abstraction"
+            HAL["`🔧 **Hardware Abstraction Layer**
+            • Traditional OS Interface
+            • Driver Management
+            • Resource Virtualization
+            • Performance Monitoring`"]
+            
+            GPU["`🎮 **AI Acceleration Layer**
+            • GPU/TPU Management
+            • Model Optimization
+            • Inference Scheduling
+            • Distributed Computing`"]
+        end
+        
+        subgraph "Layer 0: Physical Hardware"
+            HW["`💻 **Physical Infrastructure**
+            • CPU/GPU/TPU
+            • Memory & Storage
+            • Network Interface
+            • I/O Devices`"]
+        end
+    end
+    
+    %% Connections between layers
+    UI --> NLP
+    NLP --> Apps
+    NLP --> Agents
+    Apps --> KnowSys
+    Apps --> TaskMgr
+    Agents --> KnowSys
+    Agents --> TaskMgr
+    Apps --> SecMgr
+    
+    KnowSys --> Core
+    TaskMgr --> Core
+    SecMgr --> Core
+    Core --> Memory
+    Core --> Learn
+    Memory --> Learn
+    
+    Core --> Threads
+    TaskMgr --> Sched
+    Threads --> Sched
+    
+    Threads --> ResAlloc
+    Sched --> ResAlloc
+    Core --> CommLayer
+    Memory --> Storage
+    
+    ResAlloc --> HAL
+    CommLayer --> HAL
+    Storage --> HAL
+    HAL --> GPU
+    
+    HAL --> HW
+    GPU --> HW
+    
+    %% Styling
+    classDef layer7 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef layer6 fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef layer5 fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef layer4 fill:#fff3e0,stroke:#e65100,stroke-width:3px
+    classDef layer3 fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    classDef layer2 fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    classDef layer1 fill:#ede7f6,stroke:#4527a0,stroke-width:2px
+    classDef layer0 fill:#efebe9,stroke:#3e2723,stroke-width:2px
+    
+    class UI,NLP layer7
+    class Apps,Agents layer6
+    class KnowSys,TaskMgr,SecMgr layer5
+    class Core,Memory,Learn layer4
+    class Threads,Sched layer3
+    class ResAlloc,CommLayer,Storage layer2
+    class HAL,GPU layer1
+    class HW layer0
+```
+
+### Key Architecture Principles:
+
+#### 🎯 **Reasoning-First Design**
+- Every layer above hardware is infused with AI reasoning capability
+- Traditional "dumb" system calls replaced with intelligent interpretation
+- Context flows bidirectionally through all layers
+
+#### 🔄 **Emergent Intelligence**
+- Higher layers gain emergent capabilities from lower layer interactions
+- System becomes more intelligent through cross-layer learning
+- Adaptive behavior emerges from component collaboration
+
+#### 🌊 **Semantic Flow**
+- Information flows as semantic concepts, not just data
+- Each layer adds meaning and context understanding
+- Natural language serves as universal protocol
+
+#### ⚡ **Efficiency Through Understanding**
+- Resource allocation based on semantic importance
+- Predictive optimization using reasoning about user intent
+- Intelligent caching of reasoning patterns and results
