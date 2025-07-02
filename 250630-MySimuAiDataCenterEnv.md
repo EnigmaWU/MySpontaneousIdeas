@@ -1,2 +1,11 @@
 # MySimuAiDataCenterEnv
 - Brief: simulate a AI data center environment for design&implement&verify `CostReductionAiAgent` and `SecurityAndSafetyAiAgent`.
+- **Ai Data Center**: which means a GPU heavy computing environment, which is used to train and run AI models, such as popular LLMs (Large Language Models).
+- **Environment**: which means a room with many racks to hold many servers, and all others needed facilities, such as power supply, cooling system, network connection, etc.
+- **Simulation**: which means a virtual environment that can be used to test and verify the design and implementation of AI agents, such as `CostReductionAiAgent` and `SecurityAndSafetyAiAgent`.
+- **CostReductionAiAgent**: which means an AI agent that can reduce the cost of running AI data center, such as optimizing the resource allocation, minimizing the energy consumption, etc.
+- **SecurityAndSafetyAiAgent**: which means an AI agent that can ensure the security and safety of AI data center, such as preventing the unauthorized access, detecting the anomalies, etc.
+- **Design**: which means the process of creating the architecture and components of AI data center, such as the layout of racks, the selection of servers, the configuration of network, etc.
+- **Implement**: which means the process of building and deploying the AI data center, such as installing the hardware, setting up the software, configuring the network, etc.
+- **Verify**: which means the process of testing and validating the AI data center, such as checking the performance, the reliability, the security, etc.
+- **Goal**: to provide a comprehensive and realistic simulation environment for AI data center, which can be used to design, implement, and verify the AI agents that can optimize the cost and ensure the security and safety of AI data center.
